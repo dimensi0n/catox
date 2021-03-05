@@ -5,9 +5,29 @@
     "price": 0
   },
   {
+    "name": "Gangnam cat",
+    "img": "gangnam.gif",
+    "price": 50
+  },
+  {
+    "name": "Sombrero cat",
+    "img": "sombrero.gif",
+    "price": 100
+  },
+  {
+    "name": "Pastry cat",
+    "img": "pastry.gif",
+    "price": 150
+  },
+  {
     "name": "Pizza cat",
     "img": "pizza.gif",
     "price": 200
+  },
+  {
+    "name": "Hamburger cat",
+    "img": "hamburger.gif",
+    "price": 300
   },
   {
     "name": "Cheetos cat",
