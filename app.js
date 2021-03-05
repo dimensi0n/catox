@@ -136,6 +136,12 @@ function select(catName) {
 }
 
 document.body.onload = async () => {
+  const noSleep = new NoSleep()
+  document.addEventListener('click', function enableNoSleep() {
+    document.removeEventListener('click', enableNoSleep, false);
+    noSleep.enable();
+  }, false);
+  
   const catEl = document.getElementById('cat')
 
   catEl.onclick = (el) => {
