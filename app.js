@@ -141,9 +141,6 @@ document.body.onload = async () => {
     document.removeEventListener('click', enableNoSleep, false);
     noSleep.enable();
   }, false);
-  
-
-  window.screen.orientation.lock('portrait')
 
   const catEl = document.getElementById('cat')
 
