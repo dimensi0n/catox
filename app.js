@@ -142,6 +142,7 @@ document.body.onload = async () => {
     noSleep.enable();
   }, false);
   
+  screen.lockOrientation('portrait-primary')
   const catEl = document.getElementById('cat')
 
   catEl.onclick = (el) => {
