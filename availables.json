@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Basic",
+    "img": "working.gif",
+    "price": 0
+  },
+  {
+    "name": "Pizza cat",
+    "img": "pizza.gif",
+    "price": 200
+  },
+  {
+    "name": "Cheetos cat",
+    "img": "cheetos.gif",
+    "price": 400
+  },
+  {
+    "name": "Noodle cat",
+    "img": "noodle.gif",
+    "price": 450
+  }
+]
