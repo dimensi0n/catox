@@ -138,6 +138,13 @@ function select(catName) {
   }
 }
 
+function reinit() {
+  window.localStorage.removeItem('credits')
+  window.localStorage.removeItem('owned')
+  window.localStorage.removeItem('selectionned')
+  window.location = '/'
+}
+
 document.body.onload = async () => {
   const noSleep = new NoSleep()
   document.addEventListener('click', function enableNoSleep() {
