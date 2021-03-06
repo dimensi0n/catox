@@ -174,6 +174,10 @@ document.body.onload = async () => {
       main.style.display = 'block'
       shop.style.display = 'none'
       isDisplayed = 'main'
+    } else if (isDisplayed === 'settings') {
+      settings.style.display = 'none'
+      shop.style.display = 'block'
+      isDisplayed = 'shop'
     }
   }
 
@@ -181,11 +185,15 @@ document.body.onload = async () => {
     if (isDisplayed === 'main') {
       main.style.display = 'none'
       settings.style.display = 'block'
-      isDisplayed = 'shop'
-    } else if (isDisplayed === 'shop') {
+      isDisplayed = 'settings'
+    } else if (isDisplayed === 'settings') {
       main.style.display = 'block'
       settings.style.display = 'none'
       isDisplayed = 'main'
+    } else if (isDisplayed === 'shop') {
+      shop.style.display = 'none'
+      settings.style.display = 'block'
+      isDisplayed = 'settings'
     }
   }
 }
