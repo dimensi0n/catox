@@ -110,7 +110,7 @@ class Cat {
   }
 }
 
-
+const catEl = document.getElementById('cat')
 const countEl = document.getElementById('countup')
 const creditsEl = document.getElementById('credits')
 
@@ -133,6 +133,9 @@ function select(catName) {
   cat.selectCat(catName)
   const availablesSection = document.getElementById('availables')
   availablesSection.innerHTML = cat.getAvailables()
+  if (cat.isWorking) {
+    catEl.setAttribute('src', `img/availables/${cat.selectionned}`)
+  }
 }
 
 document.body.onload = async () => {
@@ -141,8 +144,6 @@ document.body.onload = async () => {
     document.removeEventListener('click', enableNoSleep, false);
     noSleep.enable();
   }, false);
-
-  const catEl = document.getElementById('cat')
 
   catEl.onclick = (el) => {
     cat.onclick(el, creditsEl, countEl)
