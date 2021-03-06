@@ -154,7 +154,9 @@ document.body.onload = async () => {
   const shop = document.getElementById('shop')
 
   const shopTrigger = document.getElementById('shop-trigger')
+  const shopSpan = document.getElementById('shop-span')
   const settingsTrigger = document.getElementById('settings-trigger')
+  const settingsSpan = document.getElementById('settings-span')
 
   await cat.fetchAvailable('availables.json')
 
@@ -162,7 +164,7 @@ document.body.onload = async () => {
   console.log(cat.owned)
   availablesSection.innerHTML = cat.getAvailables()
 
-  shopTrigger.onclick = () => {
+  shopTrigger.onclick = shopSpan.onclick = () => {
     if (isDisplayed === 'main') {
       main.style.display = 'none'
       shop.style.display = 'block'
@@ -174,7 +176,7 @@ document.body.onload = async () => {
     }
   }
 
-  settingsTrigger.onclick = () => {
+  settingsTrigger.onclick = settingsSpan.onclick = () => {
     if (isDisplayed === 'main') {
       main.style.display = 'none'
       settings.style.display = 'block'
